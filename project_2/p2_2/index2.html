@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+    <title>Lucky Number v2</title>
+    <meta charset="UTF-8">
+    <meta name="IT 411 Project 2" content="Part 2">
+    <meta author="Joseph Balich">    
+
+<script>
+
+    var shirtMessage = ['ALLLLABOARDDDDD HaHaHaHaHa', 'Damn it feels good to be a gangsta!', 'Ooops! I did it again!', 'IT 411 ROCKS!!!!!!!!', 'Greetings, Earthling!', 'GO CUBS GO!', 'DA BEARS!', 'This is another message. Meta...', "9 9 9 9 9 9 9 9 9 that's 9 nines", 'Quote written in a quote in a quote'];
+    
+	var luckyNumber = Number(prompt("Please enter your lucky number."));
+    
+    var luckyMessage = luckyNumber % shirtMessage.length
+    
+    if(luckyNumber < 0) {
+        alert("Please enter a positive number.");
+    
+    } else {
+        
+         document.write(shirtMessage[luckyMessage]);
+
+    }
+    
+
+
+    
+</script>
+    
+</head>
+    
+<body>
+
+</body>
+</html>

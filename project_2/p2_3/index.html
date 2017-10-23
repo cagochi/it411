@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="IT 411 Project 2" content="Part 3">
+    <meta author="Joseph Balich">    
+   
+    <script>
+    
+    var numbers = [];
+    var number = Number(prompt("Please enter a number you would like to be multiplied. Enter -1 to stop."));
+    while (number != -1) {
+        numbers.push(number);
+        number = Number(prompt("Please enter a number you would like to be multiplied. Enter -1 to stop."));
+    }
+
+    var productOne = 1;
+    for (var index = 0; index < numbers.length; index++){
+        productOne = productOne * numbers[index];
+    }    
+    var product = productOne;
+        document.write("<h1>The numbers you entered are " + numbers.join(", ") + "." + "</h1>");
+        document.write("The product of your numbers is " + productOne + ".");
+    
+    
+    </script>
+     
+</head>
+
+<body>
+</body>
+</html>
